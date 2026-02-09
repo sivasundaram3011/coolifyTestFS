@@ -1,0 +1,6 @@
+/* Bayer Design System - Official Theme */
+@import './styles/bayer-theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,77 @@
+{
+  "template": "bayer-vite-react-fullstack",
+  "version": "2.1.0",
+  "description": "Full-stack template with React + Vite frontend, Node.js + Express backend, and separate modular database layer",
+  "features": [
+    "React 18 with TypeScript",
+    "Vite for fast development",
+    "Node.js Express REST API",
+    "Separate scalable database module",
+    "MongoDB with Mongoose ODM",
+    "Database migrations and seeders",
+    "Query helpers and utilities",
+    "Docker and Docker Compose",
+    "Coolify deployment ready",
+    "Bayer Design System theming",
+    "Hot reload for development",
+    "Production optimized builds"
+  ],
+  "structure": {
+    "frontend": {
+      "path": "/",
+      "framework": "react-vite",
+      "language": "typescript",
+      "port": {
+        "dev": 5173,
+        "prod": 80
+      }
+    },
+    "backend": {
+      "path": "/backend",
+      "framework": "express",
+      "language": "javascript",
+      "port": 3000
+    },
+    "database": {
+      "path": "/database",
+      "type": "mongodb",
+      "version": "7.0",
+      "port": 27017,
+      "features": [
+        "Centralized connection management",
+        "Reusable schemas and models",
+        "Migration system",
+        "Seeder system",
+        "Query helpers (pagination, bulk ops)",
+        "Validation utilities",
+        "Soft delete support"
+      ]
+    }
+  },
+  "deployment": {
+    "platform": "coolify",
+    "methods": [
+      "docker-compose",
+      "separate-services"
+    ],
+    "files": {
+      "production": "docker-compose.yml",
+      "development": "docker-compose.dev.yml"
+    }
+  },
+  "api": {
+    "baseUrl": "/api",
+    "endpoints": {
+      "health": "/health",
+      "items": "/api/items"
+    }
+  },
+  "documentation": [
+    "DEPLOYMENT.md",
+    "SETUP_COMPLETE.md",
+    "DATABASE_MODULE.md",
+    "database/README.md",
+    "backend/README.md",
+    "QUICK_REFERENCE.md"
+  ]
+}

@@ -1,0 +1,29 @@
+# Development Dockerfile for Node.js API
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy database package files
+COPY database/package.json ./database/
+
+# Copy backend package files
+COPY backend/package.json backend/package-lock.json* ./backend/
+
+# Install database dependencies
+WORKDIR /app/database
+RUN npm install
+
+# Install backend dependencies
+WORKDIR /app/backend
+RUN npm install
+
+# Copy all code
+WORKDIR /app
+COPY database ./database
+COPY backend ./backend
+
+WORKDIR /app/backend
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev"]

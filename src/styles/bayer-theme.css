@@ -1,0 +1,168 @@
+/* Bayer Design System - Official Color Theme */
+/* ⚠️ WARNING: Only these colors are allowed. No other colors should be used. */
+
+:root {
+  /* ============================================ */
+  /* PRIMARY COLOR RAMP (Pink/Red) */
+  /* ============================================ */
+  --bayer-primary-50: #ffdce4;
+  --bayer-primary-100: #ffbece;
+  --bayer-primary-200: #ff7596;
+  --bayer-primary-300: #ff3162;
+  --bayer-primary-400: #de0043;
+  --bayer-primary-500: #bf124b;
+  --bayer-primary-600: #a02453;
+  --bayer-primary-700: #81365b;
+  --bayer-primary-800: #624963;
+  --bayer-primary-900: #443247;
+
+  /* ============================================ */
+  /* SECONDARY COLOR RAMP (Blue) */
+  /* ============================================ */
+  --bayer-secondary-50: #e7f8ff;
+  --bayer-secondary-100: #cdf1ff;
+  --bayer-secondary-200: #a4e7ff;
+  --bayer-secondary-300: #3eccff;
+  --bayer-secondary-400: #00bcff;
+  --bayer-secondary-500: #0091df;
+  --bayer-secondary-600: #007cb8;
+  --bayer-secondary-700: #006f9b;
+  --bayer-secondary-800: #00617f;
+  --bayer-secondary-900: #10384f;
+
+  /* ============================================ */
+  /* SEMANTIC COLORS */
+  /* ============================================ */
+  --lmnt-theme-primary: #de0043;
+  --lmnt-theme-primary-variant: #443247;
+  --lmnt-theme-primary-on-surface: #cc003d;
+  
+  --lmnt-theme-secondary: #10384f;
+  --lmnt-theme-secondary-variant: #00bcff;
+  --lmnt-theme-secondary-on-surface: #006f9b;
+
+  --lmnt-theme-background: #ffffff;
+  --lmnt-theme-on-background: #443247;
+  
+  --lmnt-theme-surface: #ffffff;
+  --lmnt-theme-on-surface: #443247;
+  --lmnt-theme-surface-variant: #f5f5f5;
+
+  --lmnt-theme-danger: #de0043;
+  --lmnt-theme-danger-variant: #bf124b;
+  --lmnt-theme-danger-on-surface: #cc003d;
+
+  --lmnt-theme-success: #006f9b;
+  --lmnt-theme-success-variant: #00bcff;
+  --lmnt-theme-success-on-surface: #006f9b;
+
+  /* ============================================ */
+  /* ON COLOR VARIANTS (White with opacity) */
+  /* ============================================ */
+  --lmnt-on-primary-base: rgb(255, 255, 255);
+  --lmnt-on-primary-active: rgba(255, 255, 255, 0.87);
+  --lmnt-on-primary-inactive: rgba(255, 255, 255, 0.73);
+  --lmnt-on-primary-disabled: rgba(255, 255, 255, 0.38);
+  --lmnt-on-primary-stroke: rgba(255, 255, 255, 0.12);
+
+  --lmnt-on-secondary-base: rgb(255, 255, 255);
+  --lmnt-on-secondary-active: rgba(255, 255, 255, 0.87);
+  --lmnt-on-secondary-inactive: rgba(255, 255, 255, 0.73);
+  --lmnt-on-secondary-disabled: rgba(255, 255, 255, 0.38);
+  --lmnt-on-secondary-stroke: rgba(255, 255, 255, 0.12);
+
+  --lmnt-on-danger-base: rgb(255, 255, 255);
+  --lmnt-on-danger-active: rgba(255, 255, 255, 0.87);
+  --lmnt-on-danger-inactive: rgba(255, 255, 255, 0.73);
+  --lmnt-on-danger-disabled: rgba(255, 255, 255, 0.38);
+  --lmnt-on-danger-stroke: rgba(255, 255, 255, 0.12);
+
+  --lmnt-on-success-base: rgb(255, 255, 255);
+  --lmnt-on-success-active: rgba(255, 255, 255, 0.87);
+  --lmnt-on-success-inactive: rgba(255, 255, 255, 0.73);
+  --lmnt-on-success-disabled: rgba(255, 255, 255, 0.38);
+  --lmnt-on-success-stroke: rgba(255, 255, 255, 0.12);
+}
+
+/* ============================================ */
+/* TEXT COLOR CLASSES */
+/* ============================================ */
+.lmnt-theme-primary { color: var(--lmnt-theme-primary); }
+.lmnt-theme-on-primary { color: var(--lmnt-on-primary-base); }
+.lmnt-theme-on-primary-active { color: var(--lmnt-on-primary-active); }
+.lmnt-theme-on-primary-inactive { color: var(--lmnt-on-primary-inactive); }
+.lmnt-theme-on-primary-disabled { color: var(--lmnt-on-primary-disabled); }
+.lmnt-theme-primary-variant { color: var(--lmnt-theme-primary-variant); }
+.lmnt-theme-on-primary-variant { color: var(--lmnt-on-primary-base); }
+.lmnt-theme-primary-on-surface { color: var(--lmnt-theme-primary-on-surface); }
+
+.lmnt-theme-secondary { color: var(--lmnt-theme-secondary); }
+.lmnt-theme-on-secondary { color: var(--lmnt-on-secondary-base); }
+.lmnt-theme-on-secondary-active { color: var(--lmnt-on-secondary-active); }
+.lmnt-theme-on-secondary-inactive { color: var(--lmnt-on-secondary-inactive); }
+.lmnt-theme-on-secondary-disabled { color: var(--lmnt-on-secondary-disabled); }
+.lmnt-theme-secondary-variant { color: var(--lmnt-theme-secondary-variant); }
+.lmnt-theme-on-secondary-variant { color: var(--lmnt-on-secondary-base); }
+.lmnt-theme-secondary-on-surface { color: var(--lmnt-theme-secondary-on-surface); }
+
+.lmnt-theme-background { color: var(--lmnt-theme-background); }
+.lmnt-theme-on-background { color: var(--lmnt-theme-on-background); }
+
+.lmnt-theme-surface { color: var(--lmnt-theme-surface); }
+.lmnt-theme-on-surface { color: var(--lmnt-theme-on-surface); }
+.lmnt-theme-surface-variant { color: var(--lmnt-theme-surface-variant); }
+
+.lmnt-theme-danger { color: var(--lmnt-theme-danger); }
+.lmnt-theme-on-danger { color: var(--lmnt-on-danger-base); }
+.lmnt-theme-on-danger-active { color: var(--lmnt-on-danger-active); }
+.lmnt-theme-on-danger-inactive { color: var(--lmnt-on-danger-inactive); }
+.lmnt-theme-on-danger-disabled { color: var(--lmnt-on-danger-disabled); }
+.lmnt-theme-danger-on-surface { color: var(--lmnt-theme-danger-on-surface); }
+.lmnt-theme-danger-variant { color: var(--lmnt-theme-danger-variant); }
+
+.lmnt-theme-success { color: var(--lmnt-theme-success); }
+.lmnt-theme-on-success { color: var(--lmnt-on-success-base); }
+.lmnt-theme-on-success-active { color: var(--lmnt-on-success-active); }
+.lmnt-theme-on-success-inactive { color: var(--lmnt-on-success-inactive); }
+.lmnt-theme-on-success-disabled { color: var(--lmnt-on-success-disabled); }
+.lmnt-theme-success-on-surface { color: var(--lmnt-theme-success-on-surface); }
+.lmnt-theme-success-variant { color: var(--lmnt-theme-success-variant); }
+
+/* ============================================ */
+/* BACKGROUND COLOR CLASSES */
+/* ============================================ */
+.lmnt-theme-background-bg { background-color: var(--lmnt-theme-background); }
+.lmnt-theme-surface-bg { background-color: var(--lmnt-theme-surface); }
+.lmnt-theme-surface-variant-bg { background-color: var(--lmnt-theme-surface-variant); }
+
+.lmnt-theme-primary-bg { background-color: var(--lmnt-theme-primary); }
+.lmnt-theme-primary-variant-bg { background-color: var(--lmnt-theme-primary-variant); }
+
+.lmnt-theme-secondary-bg { background-color: var(--lmnt-theme-secondary); }
+.lmnt-theme-secondary-variant-bg { background-color: var(--lmnt-theme-secondary-variant); }
+
+.lmnt-theme-danger-bg { background-color: var(--lmnt-theme-danger); }
+.lmnt-theme-danger-variant-bg { background-color: var(--lmnt-theme-danger-variant); }
+
+.lmnt-theme-success-bg { background-color: var(--lmnt-theme-success); }
+.lmnt-theme-success-variant-bg { background-color: var(--lmnt-theme-success-variant); }
+
+/* ============================================ */
+/* BORDER COLOR CLASSES */
+/* ============================================ */
+.lmnt-theme-primary-border { border-color: var(--lmnt-theme-primary); }
+.lmnt-theme-secondary-border { border-color: var(--lmnt-theme-secondary); }
+.lmnt-theme-danger-border { border-color: var(--lmnt-theme-danger); }
+.lmnt-theme-success-border { border-color: var(--lmnt-theme-success); }
+.lmnt-theme-on-primary-stroke-border { border-color: var(--lmnt-on-primary-stroke); }
+.lmnt-theme-on-secondary-stroke-border { border-color: var(--lmnt-on-secondary-stroke); }
+
+/* ============================================ */
+/* UTILITY CLASSES */
+/* ============================================ */
+
+/* Stroke colors for dividers (NOT for typography) */
+.lmnt-theme-divider-primary { border-color: var(--lmnt-on-primary-stroke); }
+.lmnt-theme-divider-secondary { border-color: var(--lmnt-on-secondary-stroke); }
+.lmnt-theme-divider-danger { border-color: var(--lmnt-on-danger-stroke); }
+.lmnt-theme-divider-success { border-color: var(--lmnt-on-success-stroke); }
