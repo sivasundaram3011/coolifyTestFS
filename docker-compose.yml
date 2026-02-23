@@ -41,6 +41,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
+    expose:
+      - 3000
 
   # Frontend (React + Vite)
   frontend:
@@ -62,6 +64,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
+    expose:
+      - 80
 
 volumes:
   mongodb_data:
